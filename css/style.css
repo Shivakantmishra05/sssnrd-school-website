@@ -928,6 +928,12 @@ nav a.nav-cta:hover {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
+    margin-left: auto;
+  }
+
+  .nav > nav {
+    width: 0;
+    flex: 0 0 0;
   }
 
   nav ul {
@@ -948,8 +954,8 @@ nav a.nav-cta:hover {
 
   .hero-overlay {
     background:
-      linear-gradient(180deg, rgba(8, 18, 32, 0.48), rgba(8, 18, 32, 0.9)),
-      linear-gradient(90deg, rgba(8, 18, 32, 0.7), rgba(8, 18, 32, 0.22));
+      linear-gradient(180deg, rgba(8, 18, 32, 0.28), rgba(8, 18, 32, 0.68)),
+      linear-gradient(90deg, rgba(8, 18, 32, 0.45), rgba(8, 18, 32, 0.08));
   }
 
   .badge {
