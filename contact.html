@@ -2,123 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | S.S.S.N.R.D. Inter College & Public School</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | S.S.S.N.R.D. Inter College & Public School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <p>📍 Todarpur, Mainpuri (U.P.) | 📞 8077302918, 8006052716</p>
-  </div>
-
-  <!-- Header -->
- <header class="header">
-  <div class="container nav">
-    <h1 class="logo">S.S.S.N.R.D.</h1>
-
-    <!-- Hamburger -->
-    <div class="menu-toggle" id="menuToggle">☰</div>
-
-    <nav>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="admission.html">Admission</a></li>
-        <li><a href="faculty.html">Faculty</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-  <!-- Page Header -->
-  <section class="hero" style="padding:50px 0;">
-    <div class="container hero-content">
-      <h1>Contact Us</h1>
-      <p class="sub">We are here to help you</p>
+  <div class="top-bar">📍 Todarpur, Mainpuri (U.P.) | 📞 8077302918 • 8006052716</div>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">S.S.S.N.R.D.</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- Contact Information -->
-  <section class="fees">
-    <div class="container">
-      <h2>Get in Touch</h2>
+  <main>
+    <section class="page-hero">
+      <div class="container hero-content">
+        <h1>Contact the School</h1>
+        <p class="hero-sub">हम आपकी हर query का जवाब देने के लिए तैयार हैं — admission, campus tour, और school policies के बारे में पूछें।</p>
+      </div>
+    </section>
 
-      <div class="fee-card" style="max-width:700px;">
-        <p><strong>🏫 School Name:</strong> S.S.S.N.R.D. Inter College & Public School</p>
-        <p><strong>📍 Address:</strong> Village Todarpur, District Mainpuri, Uttar Pradesh</p>
-        <p><strong>📞 Phone:</strong> 8077302918, 8006052716</p>
-        <p><strong>📧 Email:</strong> sssnrd28@gmail.com</p>
+    <section class="section">
+      <div class="container">
+        <h2>Reach Us</h2>
+        <p class="section-copy">आप हमें कॉल कर सकते हैं या नीचे message भेजें। हमारी टीम जल्दी response देगी।</p>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>School Address</h3>
+            <p>Village Todarpur, District Mainpuri, Uttar Pradesh</p>
+          </article>
+          <article class="card">
+            <h3>Phone</h3>
+            <p>8077302918 • 8006052716</p>
+          </article>
+          <article class="card">
+            <h3>Email</h3>
+            <p>sssnrd28@gmail.com</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Send a Message</h2>
+        <div class="form-card card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contact_name">Your Name</label>
+              <input id="contact_name" name="name" type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact_mobile">Mobile Number</label>
+              <input id="contact_mobile" name="mobile" type="tel" placeholder="Enter your phone number" required />
+            </div>
+            <div class="form-group">
+              <label for="contact_message">Message</label>
+              <textarea id="contact_message" name="message" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+            <p id="contactStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Our Location</h2>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps?q=Todarpur%20Mainpuri%20Uttar%20Pradesh&output=embed" title="S.S.S.N.R.D. school location map" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Contact</h3>
+        <p>📞 8077302918 • 8006052716</p>
+        <p>📧 sssnrd28@gmail.com</p>
+      </div>
+      <div>
+        <h3>Location</h3>
+        <p>Village Todarpur, District Mainpuri, Uttar Pradesh</p>
       </div>
     </div>
-  </section>
-
-  <!-- Google Map -->
-  <section class="dates">
-    <div class="container">
-      <h2>Our Location</h2>
-
-      <div style="margin-top:20px;overflow:hidden;border-radius:8px;">
-        <iframe
-          src="https://www.google.com/maps?q=Todarpur%20Mainpuri%20Uttar%20Pradesh&output=embed"
-          width="100%"
-          height="350"
-          style="border:0;"
-          loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form (Frontend Correct) -->
-  <section class="fees">
-  <div class="container">
-    <h2>Send Us a Message</h2>
-    <p style="max-width:700px;margin:10px auto 25px;text-align:center;">
-      Have a question? Leave a message and our school team will contact you.
-    </p>
-
-    <form id="contactForm" style="max-width:500px;margin:auto;text-align:left;">
-
-      <label>Your Name</label>
-      <input type="text" name="name" placeholder="Enter your name" required>
-
-      <label style="margin-top:12px;">Mobile Number</label>
-      <input type="tel" name="mobile" placeholder="Enter mobile number" required>
-
-      <label style="margin-top:12px;">Your Message</label>
-      <textarea name="message" rows="4" placeholder="Write your message..." required></textarea>
-
-      <!-- Hidden field to identify form -->
-      <input type="hidden" name="type" value="contact">
-
-      <button type="submit" class="btn-primary" style="width:100%;margin-top:20px;">
-        Send Message
-      </button>
-
-      <p id="contactStatus" style="margin-top:10px;font-size:14px;"></p>
-    </form>
-  </div>
-</section>
-
- <footer class="footer">
-  <div class="container footer-content">
-    <p>© 2026 S.S.S.N.R.D. Inter College & Public School, Todarpur (Mainpuri)</p>
-    <p>Email: sssnrd28@gmail.com</p>
-    <p style="font-size:13px;opacity:0.8;">
-      Designed & Developed by <strong>Shivakant Mishra</strong>
-    </p>
-  </div>
-</footer>
-  <!-- JS -->
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>

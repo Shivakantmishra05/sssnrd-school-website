@@ -2,132 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admission | S.S.S.N.R.D. Inter College & Public School</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <p>📍 Todarpur, Mainpuri (U.P.) | 📞 8077302918, 8006052716</p>
-  </div>
-
-  <!-- Header -->
- <header class="header">
-  <div class="container nav">
-    <h1 class="logo">S.S.S.N.R.D.</h1>
-
-    <!-- Hamburger -->
-    <div class="menu-toggle" id="menuToggle">☰</div>
-
-    <nav>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="admission.html" class="active">Admission</a></li>
-        <li><a href="faculty.html">Faculty</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-  <!-- Page Header -->
-  <section class="hero" style="padding:50px 0;">
-    <div class="container hero-content">
-      <h1>Admission 2026–27</h1>
-      <p class="sub">Har Ghar Shiksha Abhiyan – Education without barriers</p>
-    </div>
-  </section>
-
-  <!-- Tuition Waiver -->
-  <section class="fees">
-    <div class="container">
-      <h2>🎉 100% Tuition Fee Waived</h2>
-      <p style="max-width:900px;margin:15px auto;font-size:16px;">
-        From <strong>April 2026</strong>, tuition fees are completely waived
-        for all eligible students under our <strong>Har Ghar Shiksha Abhiyan</strong>.
-        Our goal is to ensure that financial constraints never stop a child’s education.
-      </p>
-    </div>
-  </section>
-
-  <!-- Fee Details -->
-  <section class="dates">
-    <div class="container">
-      <h2>One-Time Annual Charges</h2>
-      <div class="fee-card" style="margin-top:20px;">
-        <h3>₹3,000 /- (Full Year)</h3>
-        <ul>
-          <li>Admission & Registration (UDISE)</li>
-          <li>ID Card</li>
-          <li>3 Examinations</li>
-          <li>Maintenance</li>
+  <div class="top-bar">📍 Todarpur, Mainpuri (U.P.) | 📞 8077302918 • 8006052716</div>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">S.S.S.N.R.D.</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admission.html" class="active">Admission</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container hero-content">
+        <h1>Admission 2026–27</h1>
+        <p class="hero-sub">Join the school where affordable education meets disciplined learning and modern support.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Fees & Admissions</h2>
+        <p class="section-copy">हमारी फीस योजना एकदम स्पष्ट है: ₹3,000 वार्षिक एकमुश्त शुल्क। इसमें admission, registration, ID card और maintenance शामिल है।</p>
+        <div class="fee-card card">
+          <h3>₹3,000 /- Annual Charge</h3>
+          <ul>
+            <li>Admission & Registration (UDISE)</li>
+            <li>ID Card</li>
+            <li>3 Examinations</li>
+            <li>Maintenance & Support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Admission Test Dates</h2>
+        <p class="section-sub">🗓️ 15 April 2026 और 30 April 2026 — अभी registration के लिए enquiry करें।</p>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>English Medium</h3>
+            <p>Playgroup से 8वीं तक English Medium का मजबूत पाठ्यक्रम और सर्वांगीण विकास।</p>
+          </article>
+          <article class="card">
+            <h3>Hindi Medium</h3>
+            <p>6वीं से 12वीं तक Hindi Medium में Science और Arts streams के साथ board exam preparation।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Admission Enquiry</h2>
+        <div class="form-card card">
+          <form id="admissionForm">
+            <div class="form-group">
+              <label for="student_name">Student Name</label>
+              <input id="student_name" name="student_name" type="text" placeholder="Enter student name" required />
+            </div>
+            <div class="form-group">
+              <label for="class_level">Class Applying For</label>
+              <input id="class_level" name="class" type="text" placeholder="e.g. Class 6" required />
+            </div>
+            <div class="form-group">
+              <label for="parent_mobile">Parent Contact Number</label>
+              <input id="parent_mobile" name="mobile" type="tel" placeholder="Enter mobile number" required />
+            </div>
+            <button type="submit">Submit Enquiry</button>
+            <p id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Contact</h3>
+        <p>📞 8077302918 • 8006052716</p>
+        <p>📧 sssnrd28@gmail.com</p>
+      </div>
+      <div>
+        <h3>Location</h3>
+        <p>Village Todarpur, District Mainpuri, Uttar Pradesh</p>
       </div>
     </div>
-  </section>
-
-  <!-- Admission Test -->
-  <section class="fees">
-    <div class="container">
-      <h2>Admission Test Dates</h2>
-      <p style="font-size:18px;font-weight:500;">
-        🗓 15 April 2026 &nbsp; | &nbsp; 30 April 2026
-      </p>
-      <p style="margin-top:10px;">
-        📍 Venue: Village Todarpur, District Mainpuri (U.P.)
-      </p>
-    </div>
-  </section>
-
-  <!-- Enquiry Form (UI Only) -->
-  <section class="dates">
-    <div class="container">
-      <h2>Admission Enquiry</h2>
-
-    <form id="admissionForm" style="max-width:500px;margin:20px auto;text-align:left;">
-
-        <label style="display:block;margin-top:12px;font-weight:500;">Student Name</label>
-        <input type="text" name="student_name" placeholder="Enter student name" required style="width:100%;padding:10px;margin-top:5px;border:1px solid #ddd;border-radius:4px;box-sizing:border-box;">
-
-        <label style="display:block;margin-top:15px;font-weight:500;">Class Applying For</label>
-        <input type="text" name="class" placeholder="e.g. Class 6" required style="width:100%;padding:10px;margin-top:5px;border:1px solid #ddd;border-radius:4px;box-sizing:border-box;">
-
-        <label style="display:block;margin-top:15px;font-weight:500;">Parent Contact Number</label>
-        <input type="tel" name="mobile" placeholder="Mobile number" required style="width:100%;padding:10px;margin-top:5px;border:1px solid #ddd;border-radius:4px;box-sizing:border-box;">
-
-        <button type="submit" class="btn-primary" style="width:100%;margin-top:20px;">Submit Enquiry</button>
-
-        <p id="formStatus" style="margin-top:10px;font-size:14px;"></p>
-    </form>
-
-      <p style="margin-top:10px;font-size:14px;">
-        * This form is for enquiry purpose only.
-      </p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-<footer class="footer">
-  <div class="container footer-content">
-    <p>© 2026 S.S.S.N.R.D. Inter College & Public School, Todarpur (Mainpuri)</p>
-    <p>Email: sssnrd28@gmail.com</p>
-    <p style="font-size:13px;opacity:0.8;">
-      Designed & Developed by <strong>Shivakant Mishra</strong>
-    </p>
-  </div>
-</footer>
-
-  <!-- JS -->
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>
